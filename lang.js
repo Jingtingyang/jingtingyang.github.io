@@ -17,7 +17,7 @@ const translations = {
     contactEyebrow: "04 / CONTACT", contactTitle: "Let's Connect", contactDescription: "Open to opportunities in financial research, investment analytics and quantitative finance.", emailMe: "Email Me", footer: "© 2026 Jingting Yang. All rights reserved."
   },
   zh: {
-    logo: "杨静婷", navAbout: "关于我", navProjects: "研究项目", navSkills: "专业技能", navContact: "联系方式",
+    logo: "杨景亭", navAbout: "关于我", navProjects: "研究项目", navSkills: "专业技能", navContact: "联系方式",
     heroEyebrow: "金融 · 数据科学 · 投资研究", heroTitle: "杨静婷", heroSubtitle: "金融与数据科学硕士",
     heroDescription: "就读于伦敦大学学院金融与数据科学硕士项目，关注量化研究、金融建模和投资分析。",
     explore: "查看研究项目", getInTouch: "联系我", aboutEyebrow: "01 / 关于我", aboutTitle: "个人简介",
