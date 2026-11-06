@@ -1,132 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jingting Yang | Finance and Data Science Portfolio">
-  <title>Jingting Yang | Finance & Data Science</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jingting Yang | Finance and Data Science Portfolio">
+  <title>Jingting Yang | Finance & Data Science</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
-
 <body>
-  <header class="navbar">
-    <a class="logo" href="#home">JINGTING YANG</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <header class="navbar">
+    <a class="logo" href="#home" data-i18n="logo">JINGTING YANG</a>
+    <nav aria-label="Main navigation">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+      <div class="language-switch" aria-label="Language selection">
+        <button type="button" data-lang="en" onclick="switchLanguage('en')">EN</button>
+        <button type="button" data-lang="zh" onclick="switchLanguage('zh')">中文</button>
+      </div>
+    </nav>
+  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <p class="eyebrow">FINANCE · DATA SCIENCE · RESEARCH</p>
-      <h1>Jingting Yang</h1>
-      <h2>Finance & Data Science Graduate</h2>
-      <p class="intro">
-        MSc Finance with Data Science at University College London.
-        Interested in quantitative research, financial modelling,
-        and machine learning applications in financial markets.
-      </p>
-      <div class="actions">
-        <a class="button primary" href="#projects">Explore My Work</a>
-        <a class="button secondary" href="#contact">Get in Touch</a>
-      </div>
-    </section>
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow" data-i18n="heroEyebrow">FINANCE · DATA SCIENCE · RESEARCH</p>
+      <h1 data-i18n="heroTitle">Jingting Yang</h1>
+      <h2 data-i18n="heroSubtitle">Finance & Data Science Graduate</h2>
+      <p class="intro" data-i18n="heroDescription">MSc Finance with Data Science at University College London. Interested in quantitative research, financial modelling and investment analysis.</p>
+      <div class="actions">
+        <a class="button primary" href="#projects" data-i18n="explore">Explore My Work</a>
+        <a class="button secondary" href="#contact" data-i18n="getInTouch">Get in Touch</a>
+      </div>
+    </section>
 
-    <section id="about" class="section">
-      <p class="eyebrow">01 / ABOUT</p>
-      <h2>About Me</h2>
-      <p>
-        I combine financial theory, econometrics and programming
-        to investigate financial markets and investment strategies.
-        My academic work includes cross-sectional asset return
-        prediction, financial time-series analysis and
-        portfolio performance evaluation.
-      </p>
-      <div class="education">
-        <h3>Education</h3>
-        <p><strong>University College London</strong></p>
-        <p>MSc Finance with Data Science</p>
-        <p><strong>University of Liverpool</strong></p>
-        <p>BSc Economics · Upper Second-Class Honours (2:1)</p>
-      </div>
-    </section>
+    <section id="about" class="section">
+      <p class="eyebrow" data-i18n="aboutEyebrow">01 / ABOUT</p>
+      <h2 data-i18n="aboutTitle">About Me</h2>
+      <p data-i18n="aboutDescription">I combine financial theory, econometrics and programming to investigate financial markets and investment strategies. My academic work includes cross-sectional asset return prediction, financial time-series analysis and portfolio performance evaluation.</p>
+      <div class="education">
+        <h3 data-i18n="educationTitle">Education</h3>
+        <p><strong data-i18n="ucl">University College London</strong></p>
+        <p data-i18n="uclDegree">MSc Finance with Data Science</p>
+        <p><strong data-i18n="liverpool">University of Liverpool</strong></p>
+        <p data-i18n="liverpoolDegree">BSc Economics · Upper Second-Class Honours (2:1)</p>
+      </div>
+    </section>
 
-    <section id="projects" class="section">
-      <p class="eyebrow">02 / SELECTED WORK</p>
-      <h2>Research & Projects</h2>
-      <div class="project-grid">
+    <section id="projects" class="section">
+      <p class="eyebrow" data-i18n="projectsEyebrow">02 / SELECTED WORK</p>
+      <h2 data-i18n="projectsTitle">Research & Projects</h2>
+      <p class="section-description" data-i18n="projectsDescription">Selected projects in financial markets, valuation, econometrics, derivatives and data analytics.</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <span class="tag" data-i18n="carryTag">FOREIGN EXCHANGE</span>
+          <h3 data-i18n="carryTitle">FX Carry Trade Strategy</h3>
+          <p class="project-description" data-i18n="carryDescription">Exploring interest rate differentials, exchange rate movements and uncovered interest rate parity to understand currency carry trade returns and risks.</p>
+          <p class="tech" data-i18n="carryTech">FX Markets · UIP · Risk Analysis</p>
+        </article>
+        <article class="project-card">
+          <span class="tag" data-i18n="valuationTag">CORPORATE FINANCE</span>
+          <h3 data-i18n="valuationTitle">Corporate Valuation & Investment Analysis</h3>
+          <p class="project-description" data-i18n="valuationDescription">Applying discounted cash flow valuation, comparable company analysis and cost of capital estimation to evaluate corporate value and investment decisions.</p>
+          <p class="tech" data-i18n="valuationTech">DCF · WACC · Comparable Valuation</p>
+        </article>
+        <article class="project-card">
+          <span class="tag" data-i18n="timeTag">FINANCIAL ECONOMETRICS</span>
+          <h3 data-i18n="timeTitle">Financial Time-Series Analysis</h3>
+          <p class="project-description" data-i18n="timeDescription">Investigating financial time-series behaviour, stationarity and volatility dynamics using econometric models and statistical testing.</p>
+          <p class="tech" data-i18n="timeTech">Python · ARIMA · GARCH</p>
+        </article>
+        <article class="project-card">
+          <span class="tag" data-i18n="derivativesTag">DERIVATIVES</span>
+          <h3 data-i18n="derivativesTitle">Futures & Options Analysis</h3>
+          <p class="project-description" data-i18n="derivativesDescription">Exploring futures pricing, option valuation and hedging strategies using financial derivatives theory and quantitative methods.</p>
+          <p class="tech" data-i18n="derivativesTech">Futures · Black-Scholes · Hedging</p>
+        </article>
+        <article class="project-card">
+          <span class="tag" data-i18n="sqlTag">DATA ANALYTICS</span>
+          <h3 data-i18n="sqlTitle">SQL Data Cleaning & Transformation</h3>
+          <p class="project-description" data-i18n="sqlDescription">Using SQL to clean, transform and organise structured datasets, including handling missing values, duplicates and data inconsistencies.</p>
+          <p class="tech" data-i18n="sqlTech">SQL · Data Cleaning · Data Transformation</p>
+        </article>
+        <article class="project-card">
+          <span class="tag" data-i18n="bigTag">BIG DATA & MACHINE LEARNING</span>
+          <h3 data-i18n="bigTitle">Big Data & Machine Learning in Finance</h3>
+          <p class="project-description" data-i18n="bigDescription">Analysing large-scale financial datasets and investigating the predictive power of firm characteristics for stock returns. Applying machine learning techniques and evaluating investment strategies through risk-adjusted performance metrics.</p>
+          <p class="tech" data-i18n="bigTech">Python · Pandas · Scikit-learn · Machine Learning</p>
+        </article>
+      </div>
+    </section>
 
-        <article class="project-card">
-          <span class="tag">MACHINE LEARNING</span>
-          <h3>Predicting Cross-Sectional Stock Returns</h3>
-          <p>
-            Comparing LASSO, Random Forest and XGBoost
-            using firm characteristics to predict equity returns.
-            Evaluating long-short portfolio performance,
-            transaction costs and robustness.
-          </p>
-          <p class="tech">Python · XGBoost · Scikit-learn</p>
-        </article>
+    <section id="skills" class="section">
+      <p class="eyebrow" data-i18n="skillsEyebrow">03 / EXPERTISE</p>
+      <h2 data-i18n="skillsTitle">Technical Skills</h2>
+      <div class="skills">
+        <span>Python</span><span>SQL</span><span>Excel</span>
+        <span data-i18n="skillBloomberg">Bloomberg Terminal</span>
+        <span data-i18n="skillML">Machine Learning</span>
+        <span data-i18n="skillEconometrics">Financial Econometrics</span>
+        <span data-i18n="skillModelling">Financial Modelling</span>
+        <span data-i18n="skillPortfolio">Portfolio Analytics</span>
+        <span>Tableau</span>
+      </div>
+    </section>
 
-        <article class="project-card">
-          <span class="tag">ECONOMETRICS</span>
-          <h3>Financial Time-Series Analysis</h3>
-          <p>
-            Investigating financial time-series properties
-            and volatility dynamics using statistical
-            testing and econometric models.
-          </p>
-          <p class="tech">Python · ARIMA · GARCH</p>
-        </article>
-
-        <article class="project-card">
-          <span class="tag">PORTFOLIO ANALYTICS</span>
-          <h3>Quantitative Portfolio Evaluation</h3>
-          <p>
-            Analysing risk-adjusted returns, turnover,
-            maximum drawdown and transaction cost
-            sensitivity across investment strategies.
-          </p>
-          <p class="tech">Python · Pandas · Portfolio Analytics</p>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <p class="eyebrow">03 / EXPERTISE</p>
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Excel</span>
-        <span>Bloomberg Terminal</span>
-        <span>Machine Learning</span>
-        <span>Financial Econometrics</span>
-        <span>Financial Modelling</span>
-        <span>Portfolio Analytics</span>
-        <span>Tableau</span>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <p class="eyebrow">04 / CONTACT</p>
-      <h2>Let's Connect</h2>
-      <p>
-        Open to opportunities in financial research,
-        investment analytics and quantitative finance.
-      </p>
-      <a class="button primary" href="mailto:ucei791@ucl.ac.uk">
-        Email Me
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Jingting Yang. All rights reserved.</p>
-  </footer>
+    <section id="contact" class="section contact">
+      <p class="eyebrow" data-i18n="contactEyebrow">04 / CONTACT</p>
+      <h2 data-i18n="contactTitle">Let's Connect</h2>
+      <p data-i18n="contactDescription">Open to opportunities in financial research, investment analytics and quantitative finance.</p>
+      <a class="button primary" href="mailto:ucei791@ucl.ac.uk" data-i18n="emailMe">Email Me</a>
+    </section>
+  </main>
+  <footer><p data-i18n="footer">© 2026 Jingting Yang. All rights reserved.</p></footer>
 </body>
 </html>
