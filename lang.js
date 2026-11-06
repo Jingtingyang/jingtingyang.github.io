@@ -18,7 +18,7 @@ const translations = {
   },
   zh: {
     logo: "杨景亭", navAbout: "关于我", navProjects: "研究项目", navSkills: "专业技能", navContact: "联系方式",
-    heroEyebrow: "金融 · 数据科学 · 投资研究", heroTitle: "杨静婷", heroSubtitle: "金融与数据科学硕士",
+    heroEyebrow: "金融 · 数据科学 · 投资研究", heroTitle: "杨景亭", heroSubtitle: "金融与数据科学硕士",
     heroDescription: "就读于伦敦大学学院金融与数据科学硕士项目，关注量化研究、金融建模和投资分析。",
     explore: "查看研究项目", getInTouch: "联系我", aboutEyebrow: "01 / 关于我", aboutTitle: "个人简介",
     aboutDescription: "结合金融理论、计量经济学与编程方法研究金融市场及投资策略。学术项目涉及股票横截面收益预测、金融时间序列分析与投资组合绩效评估。",
@@ -31,7 +31,7 @@ const translations = {
     sqlTag: "数据分析", sqlTitle: "SQL 数据清洗与转换", sqlDescription: "使用 SQL 清洗、转换和整理结构化数据，包括处理缺失值、重复记录及数据不一致问题。", sqlTech: "SQL · 数据清洗 · 数据转换",
     bigTag: "大数据与机器学习", bigTitle: "金融大数据与机器学习", bigDescription: "分析大规模金融数据，研究公司特征对股票收益的预测能力；应用机器学习方法，并通过风险调整后的绩效指标评估投资策略。", bigTech: "Python · Pandas · Scikit-learn · 机器学习",
     skillsEyebrow: "03 / 专业能力", skillsTitle: "专业技能", skillBloomberg: "彭博终端", skillML: "机器学习", skillEconometrics: "金融计量经济学", skillModelling: "金融建模", skillPortfolio: "投资组合分析",
-    contactEyebrow: "04 / 联系方式", contactTitle: "保持联系", contactDescription: "关注金融研究、投资分析和量化金融领域的职业机会。", emailMe: "发送邮件", footer: "© 2026 杨静婷。保留所有权利。"
+    contactEyebrow: "04 / 联系方式", contactTitle: "保持联系", contactDescription: "关注金融研究、投资分析和量化金融领域的职业机会。", emailMe: "发送邮件", footer: "© 2026 杨。保留所有权利。"
   }
 };
 
