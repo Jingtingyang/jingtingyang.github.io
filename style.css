@@ -43,3 +43,17 @@ footer p { text-align:center; }
 @media(max-width:1000px) { .project-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:768px) { .navbar { flex-direction:column; } nav { justify-content:center; gap:14px; } .hero { padding:80px 7%; } .section { padding:65px 7%; } }
 @media(max-width:650px) { .project-grid { grid-template-columns:1fr; } .project-card { padding:24px; } }
+
+.project-detail-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3568a8;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-detail-link:hover {
+    color: #101c30;
+    text-decoration: underline;
+}
